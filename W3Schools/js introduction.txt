@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h2>Javascript Ogreniyorum</h2>
-<p id="Hakkimda">Hakkimda bilgi almak icin tiklayiniz </p>
-<button type="button" onclick='document.getElementById("Hakkimda").innerHTML = "Ben Cengizhan. Sakarya Universitesi Bilgisayar Muhendisligi 4. sinif ogrencisiyim."'>Button </button>
-</body>
-</html>
