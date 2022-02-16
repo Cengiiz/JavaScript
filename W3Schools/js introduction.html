@@ -2,7 +2,31 @@
 <html>
 <body>
 <h2>Javascript Ogreniyorum</h2>
-<p id="Hakkimda">Hakkimda bilgi almak icin tiklayiniz </p>
-<button type="button" onclick='document.getElementById("Hakkimda").innerHTML = "Ben Cengizhan. Sakarya Universitesi Bilgisayar Muhendisligi 4. sinif ogrencisiyim."'>Button </button>
+<p id="hakkimda">Hakkimda bilgi almak icin tiklayiniz </p>
+<button type="button" onclick='document.getElementById("hakkimda").innerHTML = "Ben Cengizhan. Sakarya Universitesi Bilgisayar Muhendisligi 4. sinif ogrencisiyim."'>Button </button>
+
+<p id="hakkimda2"> Fontu buyuk yazi </p>
+<button onclick='document.getElementById("hakkimda").style.fontSize="35px"'> Button</button>
+
+<p id="hakkimda2"> Fontu kucuk yazi </p>
+<button onclick='document.getElementById("hakkimda").style.fontSize="16px"'> Button</button>
+
+
+<p id="hakkimda2"> Gizleme </p>
+<button onclick='document.getElementById("hakkimda").style.display="none"'> Button</button>
+
+<p id="hakkimda2"> Gosterme </p>
+<button onclick='document.getElementById("hakkimda").style.display="block"'> Button</button>
+
+
+
+<h2>Javascript ile src degisikligi </h2>
+
+<button onclick='document.getElementById("foto").src="pic_bulbon.gif"' >Lambayi Yak </button>
+
+<img id="foto" src="pic_bulboff.gif" style="width:150px">
+
+<button onclick='document.getElementById("foto").src="pic_bulboff.gif"'>Lambayi sondur </button>
+
 </body>
 </html>
