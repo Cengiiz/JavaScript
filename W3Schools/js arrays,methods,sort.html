@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Js Arrays Exercise 1,2,3</h2>
+
+<p >Cars Array:</p>
+<p id="cars"></p>
+<p >indis 1:</p>
+<p id="car1"></p>
+<p>new cars array</p>
+<p id="newcars"></p>
+<p>Cars Length</p>
+<p id="lcars"></p>
+<script>
+	const cars=["Saab","Volvo","BMW"];
+    let x=cars[1];
+    let lcars=cars.length;
+    document.getElementById("cars").innerHTML=cars;
+    document.getElementById("car1").innerHTML=x;
+    cars[0]="Ford";
+    document.getElementById("newcars").innerHTML=cars;
+    document.getElementById("lcars").innerHTML=lcars;
+</script>
+
+<h2>Js Arrays Methods Exercise 1,2,3</h2>
+<p>Fruits Array:</p>
+<p id="fruits"></p>
+
+<p>remove the last item :</p>
+<p id="fruits2"></p>
+
+<p> add "Kiwi":</p>
+<p id="fruits3"></p>
+
+<p> remove "Orange" and "Kiwi":</p>
+<p id="fruits4"></p>
+
+
+<script>
+	const fruits=["Banana","Orange","Apple"];
+    document.getElementById("fruits").innerHTML=fruits;
+    fruits.pop();
+    document.getElementById("fruits2").innerHTML=fruits;
+    fruits.push("Kiwi");
+    document.getElementById("fruits3").innerHTML=fruits;
+    fruits.splice(1,2);
+    document.getElementById("fruits4").innerHTML=fruits;
+    
+</script>
+
+
+<h2>Js Arrays Sort Exercise 1</h2>
+
+<p>Fruits Array:</p>
+<p id="fruitss"></p>
+<p >A-Z</p>
+<p id="fruitss2"></p>
+<script>
+	const fruits2=["Banana","Orange","Apple","Kiwi"];
+    document.getElementById("fruitss").innerHTML=fruits2;
+    fruits2.sort();
+    
+    document.getElementById("fruitss2").innerHTML=fruits2;
+    
+</script>
+
+
+
+
+</body>
+</html>
