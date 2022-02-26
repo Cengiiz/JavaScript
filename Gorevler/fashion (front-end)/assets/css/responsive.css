@@ -1,0 +1,286 @@
+@media screen and (max-width: 785px){
+	.headerNav .nav, .headerRight{
+		display: none;
+	}
+	.mobileMenu{
+		display: flex;
+		cursor: pointer;
+	}
+	.mobileMenu ul li{
+		position: relative;
+	}
+	#mobileMenu{
+		margin-left: 20px;
+	}
+	.moblieNav{
+		display: block;
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 80px;
+	    background-color: #fff;
+	    left: -999px;
+	    transition: 0.5s;
+	}
+	.activeMobileNav{
+		left: 0;
+		display: block;
+		z-index: 999
+	}
+	.moblieNav ul li{
+		border-bottom: 1px solid #000;
+		padding: 20px 0;
+		position: relative;
+	}
+
+	.moblieNav ul li a{
+		color: #000;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 1220px){
+	.owl-item.active.center img{
+		height: 350px;
+	}
+	.sliderLeft{
+    	padding-left: 100px;
+	}
+	.sliderLeft h1{
+		font-size: 65px;
+	}
+}
+@media screen and (max-width: 1010px){
+	.owl-item.active.center img{
+		height: 290px;
+	}
+	.owl-theme .owl-nav [class*='owl-']{
+		top: 110px
+	}
+	.r1{
+		height: auto !important;
+		padding: 0
+	}
+	.r2{
+		height: auto !important;
+		padding: 0
+	}
+	.talkAboutBottom{
+		background-size: 100%;
+	}
+	.pageTop.pageTopCategory2{
+		letter-spacing: 60px;
+	}
+}
+@media screen and (max-width: 991px){
+	.categoriesFilterBox{
+		display: none;
+	}
+	.mobileCategryFilterBtn{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		cursor: pointer;
+	}
+}
+@media screen and (max-width: 850px){
+	.owl-item.active.center img{
+		height: 250px;
+	}
+	.sliderLeft{
+    	padding-left: 100px;
+	}
+	.sliderLeft h1{
+		font-size: 45px;
+	}
+	.owl-theme .owl-nav [class*='owl-']{
+		top: 82px
+	}
+	.pageTop.pageTopAbT{
+		background-size: 100%;
+	}
+	.pageTop.pageTopCategory2{
+		letter-spacing: 50px;
+	}
+	.pageTop.pageTopCategory2 span{
+		font-size: 80px;
+	}
+	.shopFooterRight a, .shopFooterLeft a, .shopFooterLeft{
+		width: 170px;
+	}
+}
+@media screen and (max-width: 760px){
+	.aboutImg, .aboutRightImg{
+		width: 100%;
+	}
+
+	.aboutImg img, .aboutRightImg img{
+		width: 100%;
+		object-fit: cover;
+	}
+	.prductColor,.prductSize{
+		width: 100%;
+		margin-top: 20px;
+		border-top: 1px solid #dedede;
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+	}
+	.shoppingFooter{
+		display: block;
+	}
+	.shopFooterRight{
+		justify-content: space-between;
+	}
+	.blogDetailLeftSocial ul{
+		display: flex;
+	}
+	.blogDetailLeftSocial ul li{
+		margin-right: 15px;
+	}
+	.contactTopCon{
+		padding: 20px 0;
+	}
+
+	.contactTopbox{
+		border-bottom: 1px solid #1B1A1A;
+		margin-bottom: 20px;
+	}
+	.r1, .r2{
+		min-height: 430px;
+		background-position: center bottom;
+    	align-items: flex-start;
+    	padding-top: 20px;
+	}
+
+}
+@media screen and (max-width: 720px){
+	.owl-item.active.center img{
+		height: 200px;
+	}
+	.sliderLeft{
+    	padding-left: 50px;
+	}
+	.sliderLeft h1{
+		font-size: 30px;
+	}
+	.owl-theme .owl-nav [class*='owl-']{
+		top: 50px
+	}
+	.r1{
+		height: auto !important;
+		padding: 0
+	}
+	.r2{
+		height: auto !important;
+		padding: 0
+	}
+	.img img{
+		height: 500px
+	}
+	.talkAboutRight form .letsTalkData input{
+		width: 280px;
+	}
+	.talkAboutRight form .letsTalkData button{
+		width: 140px;
+	}
+	.pageTop.pageTopCategory2{
+		letter-spacing: 30px;
+	}
+	.pageTop.pageTopCategory2 span{
+		font-size: 80px;
+	}
+}
+@media screen and (max-width: 600px){
+	.pageTop.pageTopAboutUs2{
+		height: 655px !important
+	}
+}
+@media screen and (max-width: 550px){
+	.owl-item.active.center img{
+		height: 150px;
+	}
+	.owl-theme .owl-nav [class*='owl-']{
+		top: 30px;
+		font-size: 50px !important
+	}
+	.getTouchData input{
+		width: 245px;
+	}
+	.getTouchData button{
+		width: 115px;
+	}
+	.footerNav ul li{
+		margin-right: 25px
+	}
+	.categoryFilter{
+		flex-wrap: wrap;
+	}
+	.fountItemCount{
+		flex: 40%;
+	}
+	.categorySort ul li{
+		margin-right: 15px
+	}
+	.pagination ul li{
+		display: none;
+	}
+
+	.pagination ul li:nth-child(1), .pagination ul li:nth-child(2), .pagination ul li:nth-child(3),
+	.pagination ul li:nth-child(4), .pagination ul li:nth-last-child(1), .pagination ul li:nth-last-child(2){
+		display: block;
+	}
+	.pageTop.pageTopCategory2 span{
+		font-size: 60px;
+	}
+}
+@media screen and (max-width: 480px){
+	.talkAboutRight form .letsTalkData input{
+		width: 230px;
+		margin-right: 15px;
+	}
+	.talkAboutRight form .letsTalkData button{
+		width: 120px;
+	}
+	.pageTop.pageTopCategory2 span{
+		font-size: 40px;
+	}
+	.pageTop.pageTopAboutUs2{
+		height: 455px !important
+	}
+	.aboutImg2{
+		margin-top: -100px
+	}
+	.pageLoc{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 400px){
+	.footerNav ul li{
+		margin-right: 20px
+	}
+	.pageTop.pageTopCategory2{
+		letter-spacing: 10px;
+	}
+	.pageTop.pageTopAboutUs2{
+		height: 455px !important
+	}
+	.aboutImg2{
+		margin-top: -50px
+	}
+}
+@media screen and (max-width: 380px){
+	.pageLoc{
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 1200px){
+	.sliderLeft{
+    	padding-left: 193px;
+    	line-height: 100px;
+	}
+	.sliderLeft h1{
+		font-size: 85px;
+    	line-height: 100px;
+	}
+}
