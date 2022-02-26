@@ -16,15 +16,8 @@ btn1.onclick=function imagegeturl()
 }
 btn2.onclick=function textcolor()
 {
-    var alltext = $('body').text();
-    var a=document.getElementsByTagName("a");
-    var h1=document.getElementsByTagName("h1");
-    var h2=document.getElementsByTagName("h2");
-    var button=document.getElementsByTagName("button");
-    var p=document.getElementsByTagName("p");
+    var text=['h1','h2','h3','h4','h5','h6','a','p','small','label','button'];
     //var x=a.concat(h1,h2);
-    var atext=[];
-    var h1text=[];
     var colorarray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -35,34 +28,101 @@ btn2.onclick=function textcolor()
 		  '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
 		  '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
 		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
-    
     var rnd2=Rnd(0,colorarray.length);
     var rnd3=Rnd(0,4);
-    if(rnd3==0)
+    var rnd=Rnd(0,text.length);
+    if(rnd==0)//h1
     {
-        var rnd1=Rnd(0,a.length);
-        a[rnd1].setAttribute('style','color:'+colorarray[rnd2]);
+        var h1=document.getElementsByTagName('h1');
+        for(var i=0;i<h1.length;i++)
+        {
+            h1[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
     }
-    else if(rnd3==1)
+    else if(rnd==1)//h2
     {
-        var rnd1=Rnd(0,h1.length);
-        h1[rnd1].setAttribute('style','color:'+colorarray[rnd2]);
+        var h2=document.getElementsByTagName('h2');
+        for(var i=0;i<h2.length;i++)
+        {
+            h2[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
     }
-    else if(rnd3==2)
+    else if(rnd==2)//h3
     {
-        var rnd1=Rnd(0,h2.length);
-        h2[rnd1].setAttribute('style','color:'+colorarray[rnd2]);
+        var h3=document.getElementsByTagName('h3');
+        for(var i=0;i<h3.length;i++)
+        {
+            h3[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
     }
-    else if(rnd3==3)
+    else if(rnd==3)//h4
     {
-        var rnd1=Rnd(0,button.length);
-        button[rnd1].setAttribute('style','color:'+colorarray[rnd2]);
+        var h4=document.getElementsByTagName('h4');
+        for(var i=0;i<h4.length;i++)
+        {
+            h4[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
     }
-    else if(rnd3==4)
+    else if(rnd==4)//h5
     {
-        var rnd1=Rnd(0,p.length);
-        p[rnd1].setAttribute('style','color:'+colorarray[rnd2]);
+        var h5=document.getElementsByTagName('h5');
+        for(var i=0;i<h5.length;i++)
+        {
+            h5[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
     }
+    else if(rnd==5)//h6
+    {
+        var h6=document.getElementsByTagName('h6');
+        for(var i=0;i<h6.length;i++)
+        {
+            h6[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
+    }
+    else if(rnd==6)//a
+    {
+        var a=document.getElementsByTagName('a');
+        for(var i=0;i<a.length;i++)
+        {
+            a[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
+    }
+    else if(rnd==7)//p
+    {
+        var p=document.getElementsByTagName('p');
+        for(var i=0;i<p.length;i++)
+        {
+            p[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
+    }
+    else if(rnd==8)//small
+    {
+        var small=document.getElementsByTagName('small');
+        for(var i=0;i<small.length;i++)
+        {
+            small[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
+    }
+    else if(rnd==9)//label
+    {
+        var label=document.getElementsByTagName('label');
+        for(var i=0;i<label.length;i++)
+        {
+            label[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
+    }
+    else if(rnd==10)//button
+    {
+        var button=document.getElementsByTagName('button');
+        for(var i=0;i<button.length;i++)
+        {
+            button[i].setAttribute('style','color:'+colorarray[rnd2]);
+        }
+    }
+
+
+
+   
 }
 function Rnd(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
@@ -70,10 +130,9 @@ function Rnd(min, max) {
 
 btn3.onclick=function dropdownlist()
 {
-    var click = document.getElementById("list");
-    if(click.style.display ==="none") {
-       click.style.display ="block";
-    } else {
-       click.style.display ="none";
-    } 
+    var click = document.getElementById("drpdwn");
+    console.log(click);
+    click.innerHTML =  '<div class="dropdown show"><a  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Products</a><div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="about-us.html">1</a><a class="dropdown-item" href="about-us2.html">2</a> <a class="dropdown-item" href="blog-detail.html">3</a> <a class="dropdown-item" href="blog-detail.html">3</a> <a class="dropdown-item" href="categories-grid.html">4</a> <a class="dropdown-item" href="checkout.html">5</a> <a class="dropdown-item" href="contact.html">6</a> <a class="dropdown-item" href="our-blog.html">7</a> <a class="dropdown-item" href="shop-bag.html">8</a> <a class="dropdown-item" href="shopping-cart.html">9</a> <a class="dropdown-item" href="categories.html">10</a></div></div>'; 
+
+
 }
